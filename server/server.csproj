@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB60D1FF-0B5B-4382-BA8C-80A31F3CE887}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>server</RootNamespace>
+    <AssemblyName>server</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleTCP, Version=1.0.24.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleTCP.1.0.24\lib\net45\SimpleTCP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="botnetform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="botnetform.Designer.cs">
+      <DependentUpon>botnetform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filemanager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filemanager.Designer.cs">
+      <DependentUpon>filemanager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="remotedesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="remotedesktop.Designer.cs">
+      <DependentUpon>remotedesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serverform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serverform.Designer.cs">
+      <DependentUpon>serverform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serverlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serverlog.Designer.cs">
+      <DependentUpon>serverlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showmessagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showmessagebox.Designer.cs">
+      <DependentUpon>showmessagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uploadfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadfile.Designer.cs">
+      <DependentUpon>uploadfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="botnetform.resx">
+      <DependentUpon>botnetform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filemanager.resx">
+      <DependentUpon>filemanager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="remotedesktop.resx">
+      <DependentUpon>remotedesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serverform.resx">
+      <DependentUpon>serverform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serverlog.resx">
+      <DependentUpon>serverlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showmessagebox.resx">
+      <DependentUpon>showmessagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadfile.resx">
+      <DependentUpon>uploadfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dll_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exe_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder2_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\misc icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monero_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ram_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\romania.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standby_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surveillance_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torrent_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\united_kingdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unknown_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webcam_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zip_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitcoin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c#_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmd_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screens_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart2_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kill_switch_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\port_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

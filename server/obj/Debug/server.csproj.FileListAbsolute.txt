@@ -1,0 +1,13 @@
+C:\Users\matei\source\repos\contingency\server\bin\Debug\server.exe.config
+C:\Users\matei\source\repos\contingency\server\bin\Debug\server.exe
+C:\Users\matei\source\repos\contingency\server\bin\Debug\server.pdb
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.csproj.AssemblyReference.cache
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.Form1.resources
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.Properties.Resources.resources
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.csproj.GenerateResource.cache
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.exe
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.pdb
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.sysinfo.resources
+C:\Users\matei\source\repos\contingency\server\bin\Debug\SimpleTCP.dll
+C:\Users\matei\source\repos\contingency\server\obj\Debug\server.csproj.CopyComplete

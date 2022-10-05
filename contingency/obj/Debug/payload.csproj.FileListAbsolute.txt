@@ -1,0 +1,7 @@
+C:\Users\matei\source\repos\contingency\contingency\bin\Debug\contingency.exe.config
+C:\Users\matei\source\repos\contingency\contingency\bin\Debug\contingency.exe
+C:\Users\matei\source\repos\contingency\contingency\bin\Debug\contingency.pdb
+C:\Users\matei\source\repos\contingency\contingency\obj\Debug\payload.csproj.AssemblyReference.cache
+C:\Users\matei\source\repos\contingency\contingency\obj\Debug\payload.csproj.CoreCompileInputs.cache
+C:\Users\matei\source\repos\contingency\contingency\obj\Debug\contingency.exe
+C:\Users\matei\source\repos\contingency\contingency\obj\Debug\contingency.pdb

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fb60d1ff-0b5b-4382-ba8c-80a31f3ce887": {
+      "ProjectGuid": "fb60d1ff-0b5b-4382-ba8c-80a31f3ce887",
+      "DisplayName": "server",
+      "ColorIndex": 0
+    },
+    "269ce3ed-b2ad-4af8-8b1d-55b44e8ca3ee": {
+      "ProjectGuid": "269ce3ed-b2ad-4af8-8b1d-55b44e8ca3ee",
+      "DisplayName": "payload",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
